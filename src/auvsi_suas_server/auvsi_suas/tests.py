@@ -32,10 +32,10 @@ from django.utils import timezone
 
 
 # Whether to perform tests which require plotting (window access)
-TEST_ENABLE_PLOTTING = False
+TEST_ENABLE_PLOTTING = True
 
 # Whether to perform load tests
-TEST_ENABLE_LOADTEST = False
+TEST_ENABLE_LOADTEST = True
 
 # The loadtest parameters
 OP_RATE_T = 10.0
