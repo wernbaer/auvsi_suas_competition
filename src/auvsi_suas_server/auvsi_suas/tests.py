@@ -32,10 +32,10 @@ from django.utils import timezone
 
 
 # Whether to perform tests which require plotting (window access)
-TEST_ENABLE_PLOTTING = True
+TEST_ENABLE_PLOTTING = False
 
 # Whether to perform load tests
-TEST_ENABLE_LOADTEST = True
+TEST_ENABLE_LOADTEST = False
 
 # The loadtest parameters
 OP_RATE_T = 10.0
@@ -2275,7 +2275,7 @@ class TestEvaluateTeams(TestCase):
         self.assertEqual(response.status_code, 200)
         csv_data = response.content
         # Check correct number of rows
-        self.assertEqual(len(csv_data.split('\n')), 4)
+        self.assertEqual(len(csv_data.split('\n')), 5)
         # Check some headers
         self.assertTrue('username' in csv_data)
         self.assertTrue('interop_times.server_info.min' in csv_data)
