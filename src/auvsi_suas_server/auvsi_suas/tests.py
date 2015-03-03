@@ -35,7 +35,7 @@ from django.utils import timezone
 TEST_ENABLE_PLOTTING = False
 
 # Whether to perform load tests
-TEST_ENABLE_LOADTEST = False
+TEST_ENABLE_LOADTEST = True
 
 # The loadtest parameters
 OP_RATE_T = 10.0
